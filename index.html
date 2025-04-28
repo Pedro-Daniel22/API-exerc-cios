@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar Exercícios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .exercise {
+      margin-top: 20px;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exercícios por Grupo Muscular</h1>
+  <input type="text" id="muscleInput" placeholder="Digite o grupo muscular (ex: biceps)" />
+  <button onclick="buscarExercicios()">Buscar</button>
+
+  <div id="resultado"></div>
+
+  <script src="main.js"></script>
+  <script src="utils.js"></script>
+  <script src="api.js"></script>
+</body>
+</html>
